@@ -1,0 +1,93 @@
+.introduce
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  padding-bottom: 25px;
+
+.introduce__heading
+  text-align: center;
+  margin-bottom: 23px;
+
+.introduce__item
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 0;
+
+.introduce__label
+  margin-right: 10px;
+  cursor: pointer;
+
+.introduce__input
+  box-sizing: border-box;
+  padding-left: 17px;
+  height: 58px;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  border: 4px solid #f2f2f2;
+  background-color: #f2f2f2;
+  outline: none;
+
+.introduce__input:hover
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+
+.introduce__input:focus
+  background-color: white;
+  border: 4px solid #e5e5e5;
+
+.introduce__input--name
+  width: 229px;
+
+.introduce__input--surname
+  width: 192px;
+
+.introduce__input--patronymic
+  width: 197px;
+
+@media (min-width: $tablet-width)
+  .introduce
+    border-top: none;
+    padding-top: 0px;
+    padding-left: 58px;
+    padding-bottom: 0px;
+    margin-top: 21px;
+    margin-bottom: 30px;
+    border-left: 1px solid #dbdbdb;
+
+  .introduce__heading
+    text-align: left;
+    margin-top: -6px;
+    margin-bottom: 57px;
+
+  .introduce__item
+    padding-left: 0px;
+
+  .introduce__input--name
+    width: 215px;
+
+  .introduce__input--surname
+    width: 178px;
+
+  .introduce__input--patronymic
+    width: 180px;
+
+@media (min-width: $desktop-width)
+  .introduce
+    margin-top: 6px;
+    padding-left: 80px;
+    margin-bottom: 28px;
+
+  .introduce__input
+    box-sizing: border-box;
+    width: 100%;
+
+  .introduce__input--name
+    width: 348px;
+
+  .introduce__input--surname
+    width: 312px;
+
+  .introduce__input--patronymic
+    width: 317px;

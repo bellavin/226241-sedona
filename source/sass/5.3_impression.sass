@@ -1,0 +1,90 @@
+.impression
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  padding-bottom: 27px;
+
+.impression__heading
+  margin-bottom: 25px;
+
+.impression__item
+  margin-top: 13px;
+  padding-left: 20px;
+
+.impression__label
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+  cursor: pointer;
+
+.impression__label::before
+  content: '';
+  box-sizing: border-box;
+  display: inline-block;
+  height: 56px;
+  width: 56px;
+  margin-right: 23px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border: 17px solid #f2f2f2;
+
+.impression__input
+  display: none;
+
+.impression__input:checked + .impression__label::before
+  background-color: #333333;
+
+.impression__item:hover .impression__label::before
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+
+.impression__item:hover .impression__input:checked + .impression__label::before
+  background-color: black;
+  border-color: #e5e5e5;
+
+.impression__item:hover .impression__label::before
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+
+.impression__item:hover .impression__input:checked + .impression__label::before
+  background-color: black;
+  border-color: #e5e5e5;
+
+.impression__item:active .impression__label::before
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+
+.impression__item:active .impression__input:checked + .impression__label::before
+  background-color: #a4a4a4;
+  border-color: #d5d5d5;
+
+@media (min-width: $tablet-width)
+  .impression
+    border-top: none;
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-bottom: 0px;
+    margin-top: 21px;
+    margin-bottom: 30px;
+
+  .impression__heading
+    text-align: left;
+    margin-top: -6px;
+    margin-bottom: 60px;
+
+  .impression__item
+    margin-top: 22px;
+    padding-left: 0;
+
+  .impression__label::before
+    margin-right: 20px;
+
+@media (min-width: $desktop-width)
+  .impression
+    margin-top: 6px;
+    margin-bottom: 27px;
+    padding-left: 123px;
+
+  .impression__heading
+    padding-left: 75px;
