@@ -1,0 +1,128 @@
+.visited-sights
+  border-top: 1px solid #e5e5e5;
+  padding-top: 18px;
+  padding-bottom: 25px;
+  line-height: 26px;
+
+.visited-sights__heading
+  margin-bottom: -7px;
+
+.visited-sights__item
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding-left: 20px;
+
+.visited-sights__label
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+  cursor: pointer;
+
+.visited-sights__label::before
+  content: '';
+  display: inline-block;
+  height: 56px;
+  width: 56px;
+  margin-right: 23px;
+  border-radius: 10%;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+
+.visited-sights__input
+  display: none;
+
+.visited-sights__input:checked + .visited-sights__label::before
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-position: center center;
+
+.visited-sights__item:hover .visited-sights__label::before
+  background-color: #e5e5e5;
+
+
+.visited-sights__item:active .visited-sights__label::before
+  background-color: #d5d5d5;
+
+.impression__item:active .impression__input:checked + .impression__label::before
+  background-color: #a4a4a4;
+  border-color: #d5d5d5;
+
+
+@media (min-width: $tablet-width)
+  .visited-sights
+    border-top: none;
+    padding-top: 24px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 47px;
+    line-height: 26px;
+
+  .visited-sights__heading
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+
+  .visited-sights__heading::before
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    height: 1px;
+    width: 125px;
+    background-color: #dbdbdb;
+
+  .visited-sights__heading::after
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    height: 1px;
+    width: 123px;
+    background-color: #dbdbdb;
+
+  .visited-sights__items
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 55px;
+
+  .visited-sights__item
+    width: 50%;
+    margin-top: 32px;
+
+  .visited-sights__devils-bridge
+    order: 1;
+
+  .visited-sights__slide-park
+    order: 3;
+
+  .visited-sights__cathedral-rock
+    order: 2;
+
+  .visited-sights__red-rocks
+    order: 4;
+
+@media (min-width: $desktop-width)
+  .visited-sights
+    padding-right: 120px;
+    padding-left: 120px;
+
+  .visited-sights__items
+    padding-left: 0px;
+    padding-right: 0px;
+
+  .visited-sights__item
+    padding: 0;
+    width: auto;
+
+  .visited-sights__heading::before
+    width: 280px;
+
+  .visited-sights__heading::after
+    width: 280px;

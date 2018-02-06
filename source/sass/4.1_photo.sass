@@ -1,0 +1,97 @@
+.photo
+  padding-top: 10px;
+
+.photo__item
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 18px;
+
+  border-top: 1px solid #e5e5e5;
+
+.photo__img
+  display: block;
+
+.photo__info
+  padding-top: 18px;
+
+.photo__autor
+  margin-top: 6px;
+  text-transform: none;
+
+.photo__like
+  margin-top: 9px;
+  font-weight: bold;
+
+.photo__like-icon
+  fill: #b2b2b2;
+  margin-right: 11px;
+
+.photo__like-count
+  vertical-align: 10%;
+
+.photo__item--last
+  border-bottom: 1px solid #e5e5e5;
+
+@media (min-width: $tablet-width)
+  .photo
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+
+  .photo__item
+    padding: 0px;
+    border: none;
+    width: 50%;
+
+  .photo__item--first
+    width: 100%;
+
+  .photo__media
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 80px;
+    padding-left: 20px;
+    background: #f2f2f2;
+
+  .photo__like
+    margin-top: 28px;
+    width: 83px;
+
+  .photo__like-icon
+    margin-right: 5px;
+
+@media (min-width: $desktop-width)
+  .photo
+    padding-top: 13px;
+    padding-left: 0;
+    padding-right: 0;
+
+  .photo__item
+    position: relative;
+    width: 33.33%;
+
+  .photo__item--first
+    width: 100%;
+
+  .photo__media
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding-right: 5px;
+
+  .photo__autor
+    color: white;
+
+  .photo__title
+    color: white;
+
+  .photo__like
+    color: white;
+
+  .photo__like-icon
+    margin-right: 5px;
+    fill: white;

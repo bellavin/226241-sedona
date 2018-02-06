@@ -1,0 +1,128 @@
+.feedback
+  border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+.feedback__heading
+  text-align: center;
+  margin-bottom: 26px;
+
+.feedback__item
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  min-width: 0;
+
+.feedback__label
+  width: 100%;
+  margin-left: 22px;
+  cursor: pointer;
+
+.feedback__label--desktop
+    display: none;
+
+.feedback__input
+  width: 222px;
+  margin-top: 12px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  height: 58px;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 4px solid #f2f2f2;
+  background-color: #f2f2f2;
+  outline: none;
+
+.feedback__input:hover
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+
+.feedback__input:focus
+  background-color: white;
+  border-color: #e5e5e5;
+
+.feedback__icon
+  text-align: center;
+  background-color: #e6e6e6;
+  margin-top: 12px;
+  padding-top: 21px;
+  width: 58px;
+  height: 37px;
+
+@media (min-width: $tablet-width)
+  .feedback
+    border-top: none;
+    padding-top: 39px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+  .feedback__heading
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 28px;
+
+  .feedback__heading::before
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    height: 1px;
+    width: 125px;
+    background-color: #dbdbdb;
+
+  .feedback__heading::after
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    height: 1px;
+    width: 123px;
+    background-color: #dbdbdb;
+
+  .feedback__item
+    margin-top: 27px;
+
+  .feedback__input
+    width: 590px;
+
+@media (min-width: $desktop-width)
+  .feedback
+    padding-left: 120px;
+    padding-right: 120px;
+
+  .feedback__items
+    display: flex;
+
+  .feedback__item
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    margin-top: 35px;
+
+  .feedback__label
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+    width: auto;
+
+  .feedback__label--desktop
+    display: block;
+
+  .feedback__label--small
+    display: none;
+
+  .feedback__phone-hidden
+    visibility: hidden;
+
+  .feedback__input
+    width: 258px;
+
+  .feedback__heading::before
+    width: 280px;
+
+  .feedback__heading::after
+    width: 280px;

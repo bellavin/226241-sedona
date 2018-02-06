@@ -1,0 +1,67 @@
+.city
+  width: 100%;
+
+  color: white;
+
+  line-height: 21px;
+  text-align: center;
+
+  // background-image: url("../img/bg-triangle.svg");
+  // background-position: center -453px;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: $bg-lightblue;
+
+.city__text
+  box-sizing: border-box;
+  padding-top: 58px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 40px;
+
+.city__heading
+  color: white;
+
+.city__number
+  margin-top: 11px;
+
+.city__description
+  margin-top: 17px;
+
+.city__image
+  display: block;
+  width: 100%;
+
+@media (min-width: $tablet-width)
+  .city
+    display: flex;
+    justify-content: flex-end;
+
+  .city__text
+    width: 256px;
+    padding-top: 45px;
+    padding-bottom: 43px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+
+  .city__heading
+    line-height: 26px;
+
+  .city__description
+    margin-top: 21px;
+
+@media (min-width: $desktop-width)
+  .city__image
+    height: 256px;
+
+  .city__text
+    width: 400px;
+    padding-top: 52px;
+    // padding-bottom: 43px;
+    padding-left: 65px;
+    padding-right: 65px;
+
+  .city__heading
+    padding-left: 50px;
+    padding-right: 50px;

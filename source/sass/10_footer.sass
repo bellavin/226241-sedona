@@ -1,0 +1,71 @@
+.footer
+  box-sizing: border-box;
+  // min-height: 243px;
+  padding-top: 35px;
+  text-align: center;
+  padding-bottom: 23px;
+  background-color: #fefefe;
+
+.footer__hashtag
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+
+.footer__socials
+  width: 153px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 36px;
+
+.footer__social-link
+  float: left;
+  width: 47px;
+  line-height: 48px;
+  margin-right: 6px;
+
+.footer__social-link:last-child
+  margin-right: 0;
+
+.footer__dev-link
+  display: block;
+  margin-top: 41px;
+  color: black;
+  text-decoration: none;
+
+.footer__dev-logo
+  margin-left: 10px;
+  vertical-align: middle;
+
+.footer__dev-link:hover .footer__dev-logo,
+.footer__dev-link:focus .footer__dev-logo
+  fill: #81b3d2;
+
+.footer__dev-link:focus .footer__dev-logo
+  fill: #b2b2b2;
+
+@media (min-width: $tablet-width)
+  .footer
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 38px;
+
+  .footer__socials
+    margin: 0;
+
+  .footer__dev-link
+    margin: 0;
+    line-height: 48px;
+
+  .footer__hashtag
+    line-height: 48px;
+
+@media (min-width: $desktop-width)
+  .footer
+    padding-left: 134px;
+    padding-right: 45px;
+
+  .footer__socials
+    margin-right: 100px;

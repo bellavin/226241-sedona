@@ -1,0 +1,43 @@
+.sending
+  padding-top: 27px;
+  padding-bottom: 36px;
+  width: 100%;
+
+.sending__button
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  width: 280px;
+
+.sending__required-fields
+  display: none;
+
+@media (min-width: $tablet-width)
+  .sending
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 62px;
+
+  .sending__button
+    margin: 0;
+    padding-left: 63px;
+    padding-right: 75px;
+    width: 324px;
+
+  .sending__required-fields
+    display: block;
+
+@media (min-width: $desktop-width)
+  .sending
+    padding-right: 120px;
+    padding-left: 120px;
+
+  .sending__button
+    width: 480px;
+    padding-left: 0;
+    padding-right: 0;
+
+  .sending
+    padding-bottom: 65px;
