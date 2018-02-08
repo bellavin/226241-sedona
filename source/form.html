@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js\picturefill.js" async></script>
 </head>
 <body>
   <svg style="display: none;">
@@ -89,6 +95,7 @@
   </svg>
 
 
+  <div class="wrapper container">
   <header class="container">
     <nav class="navigation">
       <a href="index.html" class="navigation__link navigation__link--home">Главная</a>
@@ -234,5 +241,74 @@
       </svg>
     </a>
   </footer>
+  </div>
+
+
+  <section class="modal-failure">
+    <h3 class="modal-failure__heading">Что-то пошло не&nbsp;так!</h3>
+    <p class="modal-failure__text">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <a href="#" class="modal-failure__button button modal-close">Ок</a>
+  </section>
+
+
+  <section class="modal-success">
+    <h3 class="modal-success__heading">Ваш отзыв отправлен!</h3>
+    <p class="modal-success__text">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <div class="modal-success__bottom-wraper">
+      <a href="#" class="modal-success__button button modal-close">Закрыть окно</a>
+    </div>
+  </section>
+
+  <script>
+    // Кнопка отправки формы
+    var sending = document.querySelector(".sending__button");
+
+    var modal_failure = document.querySelector(".modal-failure");
+    var modal_success = document.querySelector(".modal-success");
+
+    var close_modal_failure = modal_failure.querySelector(".modal-close");
+    var close_modal_success = modal_success.querySelector(".modal-close");
+
+    var inputs = document.getElementsByTagName("input");
+    sending.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      for (var i = 0; i < inputs.length; i++) {
+          if (inputs[i].required === true && !inputs[i].value) {
+            modal_failure.classList.add("modal-show");
+            break;
+          } else {
+            modal_success.classList.add("modal-show");
+          }
+      }
+    });
+
+    close_modal_failure.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal_failure.classList.remove("modal-show");
+    });
+
+    close_modal_success.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal_success.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (modal_failure.classList.contains("modal-show")) {
+          modal_failure.classList.remove("modal-show");
+        }
+        if (modal_success.classList.contains("modal-show")) {
+          modal_success.classList.remove("modal-show");
+        }
+      }
+    });
+
+    //15
+  </script>
 </body>
 </html>

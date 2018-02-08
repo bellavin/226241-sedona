@@ -1,0 +1,59 @@
+.modal-success
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  box-sizing: border-box;
+  display: none;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: -140px;
+  padding-top: 45px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15);
+
+.modal-success__heading
+  font-size: 18px;
+
+.modal-success__text
+  margin-top: 28px;
+  line-height: 24px;
+  padding-left: 51px;
+  padding-right: 51px;
+  padding-bottom: 34px;
+
+.modal-success__bottom-wraper
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+
+.modal-success__button
+  width: 280px;
+  font-size: 18px;
+
+@media (min-width: $tablet-width)
+  .modal-success
+    width: 640px;
+    margin-left: -320px;
+    margin-top: -119px;
+    padding-top: 55px;
+
+  .modal-success__heading
+    font-size: 30px;
+
+  .modal-success__text
+    margin-top: 25px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+  .modal-success__bottom-wraper
+    padding-top: 44px;
+    padding-bottom: 44px;
+
+  .modal-success__button
+    width: 458px;
+    font-size: 21px;
+
+.modal-show // Показать модальное окно
+  display: block;

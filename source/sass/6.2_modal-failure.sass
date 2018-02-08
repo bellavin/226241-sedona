@@ -1,0 +1,51 @@
+.modal-failure
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  box-sizing: border-box;
+  display: none;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: -102px;
+  padding-top: 41px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 49px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15);
+
+.modal-failure__heading
+  font-size: 18px;
+
+.modal-failure__text
+  margin-top: 28px;
+  line-height: 24px;
+
+.modal-failure__button
+  margin-top: 24px;
+  font-size: 18px;
+  width: 180px;
+
+@media (min-width: $tablet-width)
+  .modal-failure
+    width: 400px;
+    padding-top: 56px;
+    margin-left: -200px;
+    margin-top: -121px;
+
+  .modal-failure__heading
+    font-size: 30px;
+    line-height: 40px;
+
+  .modal-failure__text
+    margin-top: 25px;
+
+  .modal-failure__button
+    margin-top: 32px;
+    width: 272px;
+    font-size: 21px;
+
+.modal-show // Показать модальное окно
+  display: block;
