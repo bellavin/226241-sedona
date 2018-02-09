@@ -1,6 +1,5 @@
 .banner
   width: 100%;
-  // min-height: 389px;
   padding-top: 50px;
   padding-bottom: 62px;
   box-sizing: border-box;
@@ -8,8 +7,15 @@
 
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: center bottom , center bottom;
-  background-size: cover, auto;
+  background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+  .banner
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+    background-position: center bottom , center bottom;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
 
 @media (min-width: $tablet-width)
   .banner
@@ -22,11 +28,25 @@
     width: 457px;
     height: 78px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+    .banner
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+      background-position: center bottom , center bottom;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+
 @media (min-width: $desktop-width)
   .banner
     padding-top: 101px;
     padding-bottom: 117px;
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+    .banner
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+      background-position: center bottom , center bottom;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
 
 
 
@@ -36,7 +56,7 @@
 .banner--index
   padding-top: 90px;
   padding-bottom: 81px;
-  background-position: center bottom , center 0;
+  background-position: center bottom , center center;
 
 @media (min-width: $tablet-width)
   .banner--index

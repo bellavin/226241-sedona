@@ -30,6 +30,11 @@
   background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+  .sight__image
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
+    background-size: cover;
+
 @media (min-width: $tablet-width)
   .sight
     display: flex;
@@ -56,6 +61,11 @@
     height: 256px;
     background-image: url("../img/main-bridge-tablet@1x.jpg");
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+    .sight__image
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
+      background-size: cover;
+
 @media (min-width: $desktop-width)
   .sight__text
     width: 400px;
@@ -79,3 +89,8 @@
     height: 256px;
     background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-position: 0 center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+    .sight__image
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+      background-size: cover;
