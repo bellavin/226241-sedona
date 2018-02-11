@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="js\picturefill.js" async></script>
+  <script src="js\picturefill.min.js" async></script>
 </head>
 <body>
   <svg style="display: none;">
@@ -127,32 +129,32 @@
             <a href="#">
               <picture>
                 <!-- desktop -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/desktop-large.webp 2x,
-                          img/desktop-small.webp 1x"> -->
+                  srcset="img/photo-sunset-desktop@2x.webp 2x,
+                          img/photo-sunset-desktop@1x.webp 1x">
                 <source
                   media="(min-width: 1200px)"
                   srcset="img/photo-sunset-desktop@2x.jpg 2x,
                           img/photo-sunset-desktop@1x.jpg 1x">
 
                 <!-- tablet -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-sunset-tablet@2x.webp 2x,
+                          img/photo-sunset-tablet@1x.webp 1x">
                 <source
                   media="(min-width: 768px)"
                   srcset="img/photo-sunset-tablet@2x.jpg 2x,
                           img/photo-sunset-tablet@1x.jpg 1x">
 
                 <!-- mobile -->
-                <!-- <source
+                <source
                   type="image/webp"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-sunset-mobile@2x.webp 2x,
+                          img/photo-sunset-mobile@1x.webp 1x">
                 <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Закат в Седоне">
               </picture>
             </a>
@@ -174,32 +176,32 @@
             <a href="#">
               <picture>
                 <!-- desktop -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/desktop-large.webp 2x,
-                          img/desktop-small.webp 1x"> -->
+                  srcset="img/photo-cactus-desktop@2x.webp 2x,
+                          img/photo-cactus-desktop@1x.webp 1x">
                 <source
                   media="(min-width: 1200px)"
                   srcset="img/photo-cactus-desktop@2x.jpg 2x,
                           img/photo-cactus-desktop@1x.jpg 1x">
 
                 <!-- tablet -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-cactus-tablet@2x.webp 2x,
+                          img/photo-cactus-tablet@1x.webp 1x">
                 <source
                   media="(min-width: 768px)"
                   srcset="img/photo-cactus-tablet@2x.jpg 2x,
                           img/photo-cactus-tablet@1x.jpg 1x">
 
                 <!-- mobile -->
-                <!-- <source
+                <source
                   type="image/webp"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-cactus-mobile@2x.webp 2x,
+                          img/photo-cactus-mobile@1x.webp 1x">
                 <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местный кактус">
               </picture>
             </a>
@@ -221,32 +223,32 @@
             <a href="#">
               <picture>
                 <!-- desktop -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/desktop-large.webp 2x,
-                          img/desktop-small.webp 1x"> -->
+                  srcset="img/photo-roads-desktop@2x.webp 2x,
+                          img/photo-roads-desktop@1x.webp 1x">
                 <source
                   media="(min-width: 1200px)"
                   srcset="img/photo-roads-desktop@2x.jpg 2x,
                           img/photo-roads-desktop@1x.jpg 1x">
 
                 <!-- tablet -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-roads-tablet@2x.webp 2x,
+                          img/photo-roads-tablet@1x.webp 1x">
                 <source
                   media="(min-width: 768px)"
                   srcset="img/photo-roads-tablet@2x.jpg 2x,
                           img/photo-roads-tablet@1x.jpg 1x">
 
                 <!-- mobile -->
-                <!-- <source
+                <source
                   type="image/webp"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-roads-mobile@2x.webp 2x,
+                          img/photo-roads-mobile@1x.webp 1x">
                 <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
               </picture>
             </a>
@@ -268,32 +270,32 @@
             <a href="#">
               <picture>
                 <!-- desktop -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/desktop-large.webp 2x,
-                          img/desktop-small.webp 1x"> -->
+                  srcset="img/photo-bridge-desktop@2x.webp 2x,
+                          img/photo-bridge-desktop@1x.webp 1x">
                 <source
                   media="(min-width: 1200px)"
                   srcset="img/photo-bridge-desktop@2x.jpg 2x,
                           img/photo-bridge-desktop@1x.jpg 1x">
 
                 <!-- tablet -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-bridge-tablet@2x.webp 2x,
+                          img/photo-bridge-tablet@1x.webp 1x">
                 <source
                   media="(min-width: 768px)"
                   srcset="img/photo-bridge-tablet@2x.jpg 2x,
                           img/photo-bridge-tablet@1x.jpg 1x">
 
                 <!-- mobile -->
-                <!-- <source
+                <source
                   type="image/webp"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/photo-bridge-mobile@2x.webp 2x,
+                          img/photo-bridge-mobile@1x.webp 1x">
                 <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
               </picture>
             </a>
@@ -320,32 +322,32 @@
             <div class="video__player">
               <picture>
                 <!-- desktop -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/desktop-large.webp 2x,
-                          img/desktop-small.webp 1x"> -->
+                  srcset="img/video-desktop@2x.webp 2x,
+                          img/video-desktop@1x.webp 1x">
                 <source
                   media="(min-width: 1200px)"
                   srcset="img/video-desktop@2x.jpg 2x,
                           img/video-desktop@1x.jpg 1x">
 
                 <!-- tablet -->
-                <!-- <source
+                <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/video-tablet@2x.webp 2x,
+                          img/video-tablet@1x.webp 1x">
                 <source
                   media="(min-width: 768px)"
                   srcset="img/video-tablet@2x.jpg 2x,
                           img/video-tablet@1x.jpg 1x">
 
                 <!-- mobile -->
-                <!-- <source
+                <source
                   type="image/webp"
-                  srcset="img/mobile-large.webp 2x,
-                          img/mobile-small.webp 1x"> -->
+                  srcset="img/video-mobile@2x.webp 2x,
+                          img/video-mobile@1x.webp 1x">
                 <img class="photo__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеоплеер">
               </picture>
 
