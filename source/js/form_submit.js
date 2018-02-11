@@ -1,6 +1,5 @@
 'use strict';
 
-// Кнопка отправки формы
 var sending = document.querySelector(".sending__button");
 
 var modal_failure = document.querySelector(".modal-failure");
