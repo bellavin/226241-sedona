@@ -20,7 +20,7 @@ $tablet-width: 768px;
 $mobile-width: 320px;
 
 $bg-lightblue: #81b3d2;
-$bg-lightgray: #eee;
+$bg-lightgray: #eeeeee;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -29,7 +29,7 @@ $retina-dppx: 1.5dppx;
    ========================================================================== */
 
 @font-face {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@ $retina-dppx: 1.5dppx;
 }
 
 @font-face {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -45,14 +45,16 @@ $retina-dppx: 1.5dppx;
 }
 
 body {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
-  color: #333;
+  color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
 
-html, body, h1, h2, h3, h4, p {
+html,
+body,
+p {
   margin: 0;
   padding: 0;
 }
@@ -65,20 +67,27 @@ img {
 /* 3. Заголовки
    ========================================================================== */
 
-.introduction__heading, .heading3 { //h1, h3
+.introduction__heading,
+.heading3 { //h1, h3
   color: black;
   font-size: 18px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .heading2 {
   color: black;
   font-size: 21px;
+  margin: 0;
+  padding: 0;
 }
 
 .photo__title { //h4
   color: black;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -87,7 +96,8 @@ img {
     font-size: 30px;
   }
 
-  .introduction__heading--index, .heading3 {
+  .introduction__heading--index,
+  .heading3 {
     font-size: 21px;
   }
 
@@ -104,7 +114,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 58px;
@@ -126,7 +136,6 @@ img {
 .button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
-
 }
 
 .button:active svg {
@@ -176,13 +185,13 @@ img {
 }
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .wrapper {
-  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* 6. Подключение стилей блоков (БЭМ)
